@@ -35,7 +35,7 @@ When you first join, I use a 3-phase form to collect your data. This prevents th
 ---
 
 ## 📽️ Video Walkthrough: Logging In
-[[INSERT YOUTUBE LINK FOR: Login.mp4](https://youtu.be/m5pzYN8wm4w)]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/60ab5472c0bcab7133529394fbde20174d258179/ss/login.png)](https://youtu.be/m5pzYN8wm4w)
 
 ---
 
