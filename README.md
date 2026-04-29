@@ -1,4 +1,4 @@
-# 🌌 ThoughtGrid: Sovereign Intelligence Lattice
+# 🌌 ThoughtGrid:  User-Owned Social Ecosystem
 
 > [!WARNING]  
 > **PROPRIETARY SOFTWARE NOTICE**  
