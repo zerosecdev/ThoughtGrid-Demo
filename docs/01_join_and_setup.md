@@ -8,7 +8,7 @@ This part of the project handles the first time a user interacts with the system
 ---
 
 ## 📽️ Video Walkthrough: Signing up
-[![Watch the video](ss/Onboarding.png)](https://www.youtube.com/watch?v=4z0rMJ9bznM)
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/f302d8c487c27cd86b1dc0befa4e2d3880a5d688/ss/Onboarding.png)](https://www.youtube.com/watch?v=4z0rMJ9bznM)
 
 ---
 
