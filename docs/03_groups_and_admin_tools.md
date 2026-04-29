@@ -7,7 +7,7 @@ I designed the **Groups** system to work like a mini-network. Instead of just ha
 ---
 
 ## 📽️ Video Walkthrough: Joining Groups
-[INSERT YOUTUBE LINK FOR: Communities_and_Friends_Section.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/7358f07f541747328e948884370621d136008bab/ss/Communities.png)](https://youtu.be/ORi5nxFOYkk)
 
 ---
 
@@ -33,7 +33,7 @@ When you open a group, you land in the **Hub**.
 ---
 
 ## 📽️ Video Walkthrough: Managing a Community
-[INSERT YOUTUBE LINK FOR: Community_RBAC.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/7358f07f541747328e948884370621d136008bab/ss/CommunityRBAC.png)](https://youtu.be/ORi5nxFOYkk)
 
 ---
 
@@ -75,7 +75,7 @@ This is where you control the "Soul" of the group.
 ---
 
 ## 📽️ Video Walkthrough: Posting as a Mod
-[INSERT YOUTUBE LINK FOR: Community_Posting_AS_MOD.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/7358f07f541747328e948884370621d136008bab/ss/CommunityPostingAsMod.png)](https://youtu.be/AnTQPnV8q5w)
 
 ---
 
