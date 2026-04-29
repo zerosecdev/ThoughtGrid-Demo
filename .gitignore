@@ -1,0 +1,40 @@
+# ThoughtGrid Master GitIgnore
+
+# Block Heavy Video Assets (CRITICAL)
+assets/*.mp4
+assets/*.mov
+assets/*.avi
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+venv/
+__pycache__/
+*.pyc
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Build Outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Database & Uploads
+uploads/
+data/pg_data/
+data/redis_data/
+*.sqlite3
+
+# OS Files
+.DS_Store
+Thumbs.db

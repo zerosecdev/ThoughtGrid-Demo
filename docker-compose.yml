@@ -1,0 +1,113 @@
+version: '3.8'
+
+services:
+  # -----------------------------------------
+  # 1. THE SUBSTRATE (PostgreSQL Database)
+  # -----------------------------------------
+  thoughtgrid-db:
+    image: postgres:16-alpine
+    container_name: tg-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-thoughtgrid_admin}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-tg_secure_pass_2026}
+      POSTGRES_DB: ${DB_NAME:-thoughtgrid_core}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-thoughtgrid_admin} -d ${DB_NAME:-thoughtgrid_core}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # -----------------------------------------
+  # 2. THE CACHE (Redis Ephemeral Store)
+  # -----------------------------------------
+  thoughtgrid-cache:
+    image: redis:7-alpine
+    container_name: tg-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  # -----------------------------------------
+  # 3. CORTEX AI (Python FastApi Microservice)
+  # -----------------------------------------
+  thoughtgrid-cortex:
+    build:
+      context: ./app/cortex
+      dockerfile: Dockerfile
+    container_name: tg-cortex-ai
+    restart: on-failure
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+    # If deploying on GPU-enabled hardware, uncomment below:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  # -----------------------------------------
+  # 4. THE NEXUS (Node.js API & Signal Engine)
+  # -----------------------------------------
+  thoughtgrid-nexus:
+    build:
+      context: .
+      dockerfile: ./app/nexus/Dockerfile
+    container_name: tg-nexus-api
+    restart: unless-stopped
+    depends_on:
+      thoughtgrid-db:
+        condition: service_healthy
+      thoughtgrid-cache:
+        condition: service_started
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DB_HOST=thoughtgrid-db
+      - DB_PORT=5432
+      - DB_USER=${DB_USER:-thoughtgrid_admin}
+      - DB_PASSWORD=${DB_PASSWORD:-tg_secure_pass_2026}
+      - DB_NAME=${DB_NAME:-thoughtgrid_core}
+      - REDIS_URL=redis://thoughtgrid-cache:6379
+      - CORTEX_URL=http://thoughtgrid-cortex:8000
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
+      - VAULT_MASTER_KEY=${VAULT_MASTER_KEY}
+      - VAULT_FLE_KEY=${VAULT_FLE_KEY}
+    volumes:
+      - ./uploads:/workspace/uploads # Persist user binary artifacts (avatars, media)
+
+  # -----------------------------------------
+  # 5. THE VIEW (React / Vite Frontend)
+  # -----------------------------------------
+  thoughtgrid-view:
+    build:
+      context: ./app/view
+      dockerfile: Dockerfile
+    container_name: tg-morphic-ui
+    restart: unless-stopped
+    depends_on:
+      - thoughtgrid-nexus
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:3000 # Proxy target
+
+volumes:
+  pg_data:
+    name: thoughtgrid_pg_data
+  redis_data:
+    name: thoughtgrid_redis_data
