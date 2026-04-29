@@ -6,7 +6,7 @@ The **Plaza Mesh** is the town square of ThoughtGrid. It’s where everyone’s 
 ---
 
 ## 📽️ Video Walkthrough: Interacting with Posts
-[INSERT YOUTUBE LINK FOR: Post_Intractions.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/3cf9b37fe41b60afc3d501ebd984760c6b572933/ss/PostIntractions.png)](https://youtu.be/0Y3lF5HC8Fs)
 
 ---
 
@@ -32,8 +32,8 @@ I built a professional text editor right into the top of the feed so you can sha
 ---
 
 ## 📽️ Video Walkthrough: Sharing and Post Approvals
-[INSERT YOUTUBE LINK FOR: Post_Sharing.mp4]
-[INSERT YOUTUBE LINK FOR: Post_Approval.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/3cf9b37fe41b60afc3d501ebd984760c6b572933/ss/PostApproval.png)](https://youtu.be/AnTQPnV8q5w)
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/3cf9b37fe41b60afc3d501ebd984760c6b572933/ss/PostSharing.png)](#)
 
 ---
 
