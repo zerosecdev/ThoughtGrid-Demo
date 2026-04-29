@@ -6,7 +6,7 @@ The **Identity Vault** is the heart of the user experience. I didn’t want Thou
 ---
 
 ## 📽️ Video Walkthrough: Designing your Profile
-[INSERT YOUTUBE LINK FOR: MorphicLayoutEditor.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/c4fedced77083a1e2f3da4ee6d5044d5c2129d43/ss/MorphicUIEditor.png)](https://youtu.be/ytyynlnTjPg)
 
 ---
 
@@ -46,8 +46,8 @@ I wanted people to be able to share their designs.
 ---
 
 ## 📽️ Video Walkthrough: Privacy and Security
-[INSERT YOUTUBE LINK FOR: PrivacyOptions.mp4]
-[INSERT YOUTUBE LINK FOR: SecuritySettings.mp4]
+[![Privacy Options](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/c4fedced77083a1e2f3da4ee6d5044d5c2129d43/ss/PrivacyOptions.png)](https://youtu.be/cfSj84AaAts)
+[![Security Settings](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/c4fedced77083a1e2f3da4ee6d5044d5c2129d43/ss/AccountSecurity.png)](https://youtu.be/CAWdijbI1u8)
 
 ---
 
