@@ -7,7 +7,7 @@ The **Syndicate** is the messaging nervous system of ThoughtGrid. While the Plaz
 ---
 
 ## 📽️ Video Walkthrough: Using the Status Notes
-[INSERT YOUTUBE LINK FOR: Notes.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/16d16bd201869a6e96450117c9886d525ddd2597/ss/Notes.png)](https://youtu.be/S0YQvCtc1T0)
 
 ---
 
@@ -32,7 +32,7 @@ This is your command center for all conversations.
 ---
 
 ## 📽️ Video Walkthrough: Chatting and Formatting
-[INSERT YOUTUBE LINK FOR: ChatGroup_Msgs_ColorEditor_Settings.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/16d16bd201869a6e96450117c9886d525ddd2597/ss/ChatThemeEditor.png)](https://youtu.be/ZW0a1VJmTFY)
 
 ---
 
@@ -62,7 +62,7 @@ Hovering over any message reveals a hidden "Action Bar."
 ---
 
 ## 📽️ Video Walkthrough: Group Chat Settings
-[INSERT YOUTUBE LINK FOR: ChatGroupSettings.mp4]
+[![Watch the video](https://github.com/zerosecdev/ThoughtGrid-Demo/blob/16d16bd201869a6e96450117c9886d525ddd2597/ss/ChatGroupSettings.png)](https://youtu.be/jTdEDqnmlTM)
 
 ---
 
