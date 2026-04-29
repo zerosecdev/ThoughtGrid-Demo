@@ -8,7 +8,7 @@ This part of the project handles the first time a user interacts with the system
 ---
 
 ## 📽️ Video Walkthrough: Signing up
-[INSERT YOUTUBE LINK FOR: Registration_Onboarding.mp4]
+[![Watch the video](ss/Onboarding.png)](https://www.youtube.com/watch?v=4z0rMJ9bznM)
 
 ---
 
