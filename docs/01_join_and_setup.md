@@ -35,7 +35,7 @@ When you first join, I use a 3-phase form to collect your data. This prevents th
 ---
 
 ## 📽️ Video Walkthrough: Logging In
-[INSERT YOUTUBE LINK FOR: Login.mp4]
+[[INSERT YOUTUBE LINK FOR: Login.mp4](https://youtu.be/m5pzYN8wm4w)]
 
 ---
 
